@@ -1,0 +1,2 @@
+I created this repository to track my progress while learning Data Science and Machine Learning.
+It contains my practice work, notes, and implementations of fundamental concepts required to build a strong base in this field.
