@@ -1,0 +1,45 @@
+git init → Start tracking
+git add → Select files
+git commit → Save snapshot
+git branch → Set branch name
+git remote add → Connect GitHub
+git push → Upload code
+
+git remote -v = You will see the GitHub repository URL(can be more than one) linked with your project. Show all remote repositories(copies of your Git project that are stored on another computer/server instead of your local machine) and their URLs.
+
+We rename the branch from master to main to match the default branch name used by modern Git platforms like GitHub and to avoid branch mismatches during push operations.
+If push without renaming : git push origin master 
+This creates 2 branches in our repo and This creates confusion about which is the primary branch.
+origin -> nickname for remote repository
+The staging area exists after git add, not after commit
+
+git status: It tells about current condition of project on git. it tells Which branch you are on,Files that have changed but are not added yet and Files that are ready to be committed (staged files)
+
+git restore --stage "file_name" -> unstage for file (staged means ready to commit), is used after the git add step
+
+git reset -> Can unstage files(same as above statement), undo commits, or reset history
+
+After git commit,Files move from staging area → repository (saved as commit) and The staging area becomes empty again.
+After git commit, the changes happens and are saved in your local repository, not on GitHub.
+
+git diff ->git diff helps you see what you changed in file before staging(using git add . command) it
+
+git diff --staged ->Shows what will go into the next commit.(shows changes ready to commit)
+after git add you can see this
+
+git branch -> list your branches and make * over your current active branch
+git branch branch_name -> create new branch
+git checkout branch_name -> switch to this branch_name
+git merge branch_name -> merge specefied branch_name(provided here) into your current working branch
+git log shows the history of commits in your repository.
+git log -p -3 -> Show the last 3 commits along with the changes (differences)(bcz of -p) made in each commit.
+
+git merge only merges branches in your local repository.The changes go to GitHub only after you run git push.
+
+You usually have to resolve merge conflicts manually in your code.
+When conflicts happen: A merge conflict occurs when two branches modify the same part of a file.Git cannot decide which change to keep. And Merge conflicts usually require manual resolution by editing the conflicting code.
+After this add and commit your file 
+
+Git resolves merges automatically when:Changes are in different files or Changes are in different lines
+
+
